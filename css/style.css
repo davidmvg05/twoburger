@@ -773,18 +773,9 @@ h6 {
 }
 
 .hero-title {
-  margin-bottom: 24px;
+  margin-bottom: 36px;
   color: var(--c-white);
   text-shadow: 0 4px 20px var(--c-black);
-}
-
-.hero-desc {
-  font-size: clamp(1.1rem, 2vw, 1.35rem);
-  color: var(--c-white-90);
-  max-width: 760px;
-  margin: 0 auto 36px auto;
-  line-height: 1.8;
-  font-weight: 400;
 }
 
 .hero-actions {
