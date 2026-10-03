@@ -1,0 +1,51 @@
+# ==============================================================================
+# TWO BURGER MONTIJO — CONFIGURAÇÃO SERVIDOR (HOSTINGER DE / hcdn)
+# - Forçar HTTPS (Redirecionamento 301 e HSTS)
+# - Cabeçalhos de Segurança e Performance para hcdn
+# - Compressão e Cache de Recursos Estáticos
+# ==============================================================================
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Forçar HTTPS (compatível com proxy/CDN hcdn da Hostinger via X-Forwarded-Proto)
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# Cabeçalhos de Segurança e HSTS
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Content-Security-Policy "upgrade-insecure-requests"
+</IfModule>
+
+# Tipos MIME corretos (incluindo SVG, JSON-LD e ficheiros de texto LLM)
+<IfModule mod_mime.c>
+  AddType image/svg+xml .svg .svgz
+  AddType text/plain .txt
+  AddCharset UTF-8 .html .css .js .xml .json .txt
+</IfModule>
+
+# Desativar listagem de diretórios e definir Página de Erro 404 personalizada
+Options -Indexes
+ErrorDocument 404 /404.html
+
+# Cache de longa duração para recursos estáticos na CDN (hcdn)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType text/xml "access plus 0 seconds"
+  ExpiresByType application/xml "access plus 0 seconds"
+  ExpiresByType text/plain "access plus 1 day"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+</IfModule>

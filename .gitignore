@@ -1,0 +1,9 @@
+# Agentes e configurações locais de IDE
+.agents/
+.vscode/
+.idea/
+
+# Ficheiros de sistema
+.DS_Store
+Thumbs.db
+Desktop.ini

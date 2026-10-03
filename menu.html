@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+  <!-- SEO & Metadados do Cardápio -->
+  <title>Cardápio Completo | Two Burger Montijo — Hambúrgueres Artesanais & Sobremesas</title>
+  <meta name="description"
+    content="Consulte o menu completo do Two Burger Montijo. Entradas, hambúrgueres artesanais portugueses e do mundo, opções vegans, poke bowls e sobremesas caseiras. Serviço de Take Away e entregas.">
+  <meta name="keywords"
+    content="menu two burger, cardapio two burger montijo, smash burger montijo, black angus montijo, hamburguer vegan montijo, sobremesas caseiras montijo, take away montijo">
+  <meta name="author" content="Two Burger">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://twoburger.com/menu.html">
+
+  <!-- Georreferenciação GEO & Local SEO -->
+  <meta name="geo.region" content="PT-15">
+  <meta name="geo.placename" content="Montijo">
+  <meta name="geo.position" content="38.7067;-8.9739">
+  <meta name="ICBM" content="38.7067, -8.9739">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="restaurant.menu">
+  <meta property="og:site_name" content="Two Burger Montijo">
+  <meta property="og:title" content="Cardápio Completo | Two Burger Montijo">
+  <meta property="og:description"
+    content="Explore todos os nossos hambúrgueres artesanais, carnes nobres, reduções caseiras e sobremesas no Montijo. Peça para Take Away pelo 910 393 294.">
+  <meta property="og:url" content="https://twoburger.com/menu.html">
+  <meta property="og:image" content="https://twoburger.com/assets/logo/two-burger.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/logo/two-burger.png">
+
+  <!-- Google Fonts: Bebas Neue + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema.org JSON-LD para o Menu Completo -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Menu",
+    "name": "Cardápio Two Burger Montijo",
+    "url": "https://twoburger.com/menu.html",
+    "inLanguage": "pt",
+    "mainEntityOfPage": "https://twoburger.com/menu.html",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Entradas",
+        "hasMenuItem": [
+          { "@type": "MenuItem", "name": "Crispy Cheese", "price": "3.95", "priceCurrency": "EUR" },
+          { "@type": "MenuItem", "name": "Croquetes de Alheira", "price": "3.95", "priceCurrency": "EUR" },
+          { "@type": "MenuItem", "name": "Aros de Cebola", "price": "3.45", "priceCurrency": "EUR" },
+          { "@type": "MenuItem", "name": "Mix Explorer", "price": "5.95", "priceCurrency": "EUR" }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Hambúrgueres",
+        "hasMenuItem": [
+          { "@type": "MenuItem", "name": "Smash Burger", "price": "14.95", "priceCurrency": "EUR" },
+          { "@type": "MenuItem", "name": "Black Angus Premium", "price": "15.45", "priceCurrency": "EUR" },
+          { "@type": "MenuItem", "name": "Pulled Pork", "price": "14.95", "priceCurrency": "EUR" },
+          { "@type": "MenuItem", "name": "Rústico (O da Casa)", "price": "13.95", "priceCurrency": "EUR" },
+          { "@type": "MenuItem", "name": "Bigfoot (U.S.A)", "price": "13.95", "priceCurrency": "EUR" },
+          { "@type": "MenuItem", "name": "Las Vegan (100% Vegan)", "price": "12.95", "priceCurrency": "EUR" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Link de Acessibilidade -->
+  <a href="#main-content" class="skip-link">Saltar para o Conteúdo Principal</a>
+
+  <!-- =========================================================================
+       CABEÇALHO FIXO (STICKY HEADER)
+       ========================================================================= -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <!-- Logótipo à esquerda -->
+      <a href="index.html" class="site-logo" aria-label="Voltar à página inicial do Two Burger Montijo">
+        <img src="assets/logo/two-burger.png" alt="Two Burger - Hamburgueria Artesanal no Montijo">
+      </a>
+
+      <!-- Direita: Botão Início + Botão Comanda de Cozinha -->
+      <div class="header-right">
+        <a href="index.html" class="header-menu-btn" aria-label="Voltar à página inicial">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          <span>INÍCIO</span>
+        </a>
+
+        <!-- Botão com o símbolo do hambúrguer -->
+        <button id="burger-toggle-btn" class="burger-toggle-btn" aria-label="Abrir comanda de navegação da cozinha"
+          aria-expanded="false" aria-controls="ticket-backdrop">
+          <div class="burger-icon" aria-hidden="true">
+            <span class="burger-layer bun-top"></span>
+            <span class="burger-layer patty"></span>
+            <span class="burger-layer bun-bottom"></span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       MODAL: COMANDA DE COZINHA (KITCHEN ORDER TICKET)
+       ========================================================================= -->
+  <div id="ticket-backdrop" class="ticket-backdrop" role="dialog" aria-modal="true" aria-hidden="true" inert
+    aria-labelledby="ticket-title">
+    <div class="kitchen-ticket">
+      <div class="ticket-serrated-top" aria-hidden="true"></div>
+
+      <div class="ticket-content">
+        <div class="ticket-header">
+          <button id="ticket-close-btn" class="ticket-close-btn" aria-label="Fechar comanda de navegação">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+          <div class="ticket-brand" id="ticket-title">TWO BURGER</div>
+          <div class="ticket-meta">
+            <span>PEDIDO: 002 - COZINHA</span>
+            <span>MESA: TAKE AWAY / SALA</span>
+            <span id="ticket-live-date">DATA: --/--/----</span>
+            <span id="ticket-live-time">HORA: --:--:--</span>
+          </div>
+        </div>
+
+        <nav aria-label="Navegação do pedido de cozinha">
+          <div class="ticket-nav-title">ITENS DO PEDIDO (SECÇÕES):</div>
+          <ul class="ticket-nav-list">
+            <li class="ticket-nav-item">
+              <a href="index.html#inicio">
+                <span>INÍCIO</span>
+                <span class="item-qty">[01]</span>
+              </a>
+            </li>
+            <li class="ticket-nav-item">
+              <a href="index.html#experiencia">
+                <span>A EXPERIÊNCIA</span>
+                <span class="item-qty">[02]</span>
+              </a>
+            </li>
+            <li class="ticket-nav-item">
+              <a href="#menu-completo">
+                <span>O NOSSO CARDÁPIO</span>
+                <span class="item-qty">[03]</span>
+              </a>
+            </li>
+            <li class="ticket-nav-item">
+              <a href="index.html#sobre-nos">
+                <span>SOBRE NÓS</span>
+                <span class="item-qty">[04]</span>
+              </a>
+            </li>
+            <li class="ticket-nav-item">
+              <a href="index.html#avaliacoes">
+                <span>AVALIAÇÕES GOOGLE</span>
+                <span class="item-qty">[05]</span>
+              </a>
+            </li>
+            <li class="ticket-nav-item">
+              <a href="index.html#premios">
+                <span>PRÉMIOS GANHOS</span>
+                <span class="item-qty">[06]</span>
+              </a>
+            </li>
+            <li class="ticket-nav-item">
+              <a href="index.html#localizacao">
+                <span>ONDE ESTAMOS & TAKE AWAY</span>
+                <span class="item-qty">[07]</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="ticket-footer">
+          <div class="ticket-footer-label">ENCOMENDA RÁPIDA / DELIVERY:</div>
+          <a href="tel:+351910393294" class="btn btn-brand btn-sm" style="width: 100%;"
+            aria-label="Ligar para Take Away e Reservas: 910 393 294">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            <span>TAKE AWAY: 910 393 294</span>
+          </a>
+
+          <div class="ticket-delivery-grid">
+            <a href="https://www.ubereats.com/pt/store/2burger/jEYQbJ5DT4KgxHsQfyXYTQ?srsltid=AU7gw4XaxQ4QxGZfI1oIzTeFGdWqhgd0VMM1Tcwpz6xUgZ_LmrvcymeW"
+              target="_blank" rel="noopener noreferrer" class="uber-eats-logo-btn"
+              aria-label="Pedir Two Burger no Uber Eats">
+              <img src="assets/imagem/logo-uber-eats/uber-eats.svg" alt="Uber Eats" class="uber-eats-logo-img">
+            </a>
+          </div>
+
+          <div class="ticket-footer-label">SIGA-NOS NAS REDES:</div>
+          <div class="ticket-social-row">
+            <a href="https://www.instagram.com/2burger_montijo/" target="_blank" rel="noopener noreferrer"
+              class="ticket-social-icon instagram" aria-label="Visitar Instagram do Two Burger Montijo">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/2burgermontijo" target="_blank" rel="noopener noreferrer"
+              class="ticket-social-icon facebook" aria-label="Visitar Facebook do Two Burger Montijo">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="ticket-barcode">
+            ||| | ||||| || |||||| | |||| ||<br>
+            *** BOM APETITE ***
+          </div>
+        </div>
+      </div>
+
+      <div class="ticket-serrated-bottom" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       CONTEÚDO PRINCIPAL (MAIN)
+       ========================================================================= -->
+  <main id="main-content">
+
+    <!-- CABEÇALHO DA PÁGINA DO MENU -->
+    <section class="page-header-section" aria-labelledby="page-title">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Início</a> &gt; <span>Cardápio Completo</span>
+        </div>
+        <h1 id="page-title" class="title-xl">O NOSSO CARDÁPIO COMPLETO</h1>
+        <p class="section-desc" style="max-width: 720px; margin: 0 auto 28px auto;">
+          Carnes nobres, reduções artesanais, pão brioche e bolo do caco fresco. Escolha o seu prato favorito e peça
+          para Take Away ou desfrute no nosso restaurante no Montijo.
+        </p>
+        <div class="hero-actions" style="margin-bottom: 0;">
+          <a href="tel:+351910393294" class="btn btn-primary" aria-label="Ligar para encomendar Take Away: 910 393 294">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            <span>TAKE AWAY: 910 393 294</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECÇÃO DO MENU COMPLETO -->
+    <section id="menu-completo" class="menu-section" aria-label="Lista completa de pratos">
+      <div class="container">
+
+        <!-- Abas de Filtros de Categoria -->
+        <div class="menu-filter-bar" role="tablist" aria-label="Filtro de categorias do menu">
+          <button class="menu-tab-btn active" data-category="all" role="tab" aria-selected="true">TODOS</button>
+          <button class="menu-tab-btn" data-category="entradas" role="tab" aria-selected="false">ENTRADAS</button>
+          <button class="menu-tab-btn" data-category="portugueses" role="tab" aria-selected="false">HAMBÚRGUERES
+            PORTUGUESES</button>
+          <button class="menu-tab-btn" data-category="mundo" role="tab" aria-selected="false">À VOLTA DO MUNDO</button>
+          <button class="menu-tab-btn" data-category="vegans" role="tab" aria-selected="false">VEGANS</button>
+          <button class="menu-tab-btn" data-category="poke" role="tab" aria-selected="false">SALADAS & POKE
+            BOWLS</button>
+          <button class="menu-tab-btn" data-category="sobremesas" role="tab" aria-selected="false">SOBREMESAS</button>
+        </div>
+
+        <!-- Grelha de Pratos do Menu -->
+        <div class="menu-grid" id="menu-cards-container">
+
+          <!-- ENTRADA 1: CRISPY CHEESE -->
+          <article class="menu-card" data-category="entradas">
+            <div class="menu-card-img-wrap">
+              <img src="assets/imagem/menu/entradas/crispy-cheese.jpg"
+                alt="Crispy Cheese com Mozzarela Fumada e Flocos de Milho" loading="lazy">
+              <span class="menu-card-badge">ENTRADA</span>
+            </div>
+            <div class="menu-card-body">
+              <div>
+                <div class="menu-card-title-row">
+                  <h3 class="menu-card-title">CRISPY CHEESE</h3>
+                  <span class="menu-card-price">3,95 €</span>
+                </div>
+                <p class="menu-card-desc">
+                  4x Cheese Rings de Mozzarella Fumada, revestidos em flocos de milho super crocantes, servidos com
+                  molho de alho suave da casa.
+                </p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="badge-tag">Crocante & Cremoso</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ENTRADA 2: CROQUETES DE ALHEIRA -->
+          <article class="menu-card" data-category="entradas">
+            <div class="menu-card-img-wrap">
+              <img src="assets/imagem/menu/entradas/crispy-cheese.jpg" alt="Croquetes de alheira em cama de rúcula"
+                loading="lazy">
+              <span class="menu-card-badge">ENTRADA</span>
+            </div>
+            <div class="menu-card-body">
+              <div>
+                <div class="menu-card-title-row">
+                  <h3 class="menu-card-title">CROQUETES DE ALHEIRA</h3>
+                  <span class="menu-card-price">3,95 €</span>
+                </div>
+                <p class="menu-card-desc">
+                  4x Croquetes de alheira artesanal servidos em cama de rúcula fresca e acompanhados com o nosso molho
+                  exclusivo da casa.
+                </p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="badge-tag">Tradição Portuguesa</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ENTRADA 3: AROS DE CEBOLA -->
+          <article class="menu-card" data-category="entradas">
+            <div class="menu-card-img-wrap">
+              <img src="assets/imagem/menu/entradas/crispy-cheese.jpg" alt="Aros de cebola crocantes" loading="lazy">
+              <span class="menu-card-badge">ENTRADA</span>
+            </div>
+            <div class="menu-card-body">
+              <div>
+                <div class="menu-card-title-row">
+                  <h3 class="menu-card-title">AROS DE CEBOLA</h3>
+                  <span class="menu-card-price">3,45 €</span>
+                </div>
+                <p class="menu-card-desc">
+                  6x Aros de cebola dourados e crocantes acompanhados com o nosso molho Barbecue especial.
+                </p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="badge-tag">Clássico</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ENTRADA 4: MIX EXPLORER -->
+          <article class="menu-card" data-category="entradas">
+            <div class="menu-card-img-wrap">
+              <img src="assets/imagem/menu/entradas/crispy-cheese.jpg" alt="Mix Explorer de entradas Two Burger"
+                loading="lazy">
+              <span class="menu-card-badge">PARA PARTILHAR</span>
+            </div>
+            <div class="menu-card-body">
+              <div>
+                <div class="menu-card-title-row">
+                  <h3 class="menu-card-title">MIX EXPLORER</h3>
+                  <span class="menu-card-price">5,95 €</span>
+                </div>
+                <p class="menu-card-desc">
+                  O melhor das nossas entradas reunido numa só tábua: 2x croquetes de alheira, 4x aros de cebola e 2x
+                  Crispy Cheese. Perfeito para partilhar.
+                </p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="badge-tag">Destaque</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- HAMBÚRGUER: SMASH BURGER -->
+          <article class="menu-card" data-category="mundo">
+            <div class="menu-card-img-wrap">
+              <img src="assets/imagem/menu/hamburgueres/smash-burger.jpg"
+                alt="Smash Burger com cheddar duplo e bacon crocante" loading="lazy">
+              <span class="menu-card-badge">CHEF RECOMENDA</span>
+            </div>
+            <div class="menu-card-body">
+              <div>
+                <div class="menu-card-title-row">
+                  <h3 class="menu-card-title">SMASH BURGER</h3>
+                  <span class="menu-card-price">14,95 €</span>
+                </div>
+                <p class="menu-card-desc">
+                  2x 100g de novilho suculento e crocante na chapa, servido em pão brioche tostado, com cheddar extra a
+                  derreter, bacon crocante, cebola caramelizada no ponto, pickles e o toque mágico de mostarda e mel.
+                </p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="badge-tag">Smash Chapa</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- HAMBÚRGUER: PULLED PORK -->
+          <article class="menu-card" data-category="mundo">
+            <div class="menu-card-img-wrap">
+              <img src="assets/imagem/menu/hamburgueres/pulled-pork.png" alt="Pulled Pork Burger com molho especial BBQ"
+                loading="lazy">
+              <span class="menu-card-badge">DESTAQUE</span>
+            </div>
+            <div class="menu-card-body">
+              <div>
+                <div class="menu-card-title-row">
+                  <h3 class="menu-card-title">PULLED PORK</h3>
+                  <span class="menu-card-price">14,95 €</span>
+                </div>
+                <p class="menu-card-desc">
+                  Pão de brioche tostado, 100g de novilho ao estilo smash, salada americana refrescante, cheddar
+                  cremoso, aros de cebola crocantes, pulled pork suavemente desfiado e molho especial BBQ.
+                </p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="badge-tag">Fumado & Desfiado</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- HAMBÚRGUER: BLACK ANGUS PREMIUM -->
+          <article class="menu-card" data-category="mundo">
+            <div class="menu-card-img-wrap">
+              <img src="assets/imagem/menu/hamburgueres/black-angus-premium.png"
+                alt="Black Angus Premium com redução de Vinho do Porto" loading="lazy">
+              <span class="menu-card-badge">PREMIUM</span>
+            </div>
+            <div class="menu-card-body">
+              <div>
+                <div class="menu-card-title-row">
+                  <h3 class="menu-card-title">BLACK ANGUS PREMIUM</h3>
+                  <span class="menu-card-price">15,45 €</span>
+                </div>
+                <p class="menu-card-desc">
+                  100g + 100g de carne certificada Black Angus, molho da casa, alface iceberg, extra cheddar cremoso,
+                  bacon fumado crocante e cebola confitada com redução de Vinho do Porto.
+                </p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="badge-tag">Carne Nobre</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- HAMBÚRGUER: BIGFOOT -->
+          <article class="menu-card" data-category="mundo">
+            <div class="menu-card-img-wrap">
+              <img src="assets/imagem/menu/hamburgueres/bigfoot.jpg" alt="Bigfoot Burger estilo americano"
+                loading="lazy">
+              <span class="menu-card-badge">U.S.A.</span>
+            </div>
+            <div class="menu-card-body">
+              <div>
+                <div class="menu-card-title-row">
+                  <h3 class="menu-card-title">BIGFOOT (U.S.A)</h3>
+                  <span class="menu-card-price">13,95 €</span>
+                </div>
+                <p class="menu-card-desc">
+                  2x Hambúrgueres de novilho de 100g cobertos com creme irresistível de cheddar e pepperoni, bacon
+                  crocante, cebola caramelizada, pickles e molho americano exclusivo.
+                </p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="badge-tag">Duplo Novilho</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- HAMBÚRGUER: RÚSTICO -->
+          <article class="menu-card" data-category="portugueses">
+            <div class="menu-card-img-wrap">
+              <img src="assets/imagem/menu/hamburgueres/rustico.jpg"
+                alt="Hambúrguer Rústico o da casa com queijo chèvre" loading="lazy">
+              <span class="menu-card-badge">O DA CASA</span>
+            </div>
+            <div class="menu-card-body">
+              <div>
+                <div class="menu-card-title-row">
+                  <h3 class="menu-card-title">RÚSTICO</h3>
+                  <span class="menu-card-price">13,95 €</span>
+                </div>
+                <p class="menu-card-desc">
+                  180g de novilho selecionado servido em pão de brioche amanteigado, rúcula selvagem, queijo chèvre
+                  gratinado e pêra confitada com redução de Vinho do Porto.
+                </p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="badge-tag">Chèvre & Pêra</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- HAMBÚRGUER: CLÁSSICO LISBOA -->
+          <article class="menu-card" data-category="portugueses">
+            <div class="menu-card-img-wrap">
+              <img src="assets/imagem/menu/hamburgueres/rustico.jpg" alt="Hambúrguer Clássico Lisboa" loading="lazy">
+              <span class="menu-card-badge">LISBOA</span>
+            </div>
+            <div class="menu-card-body">
+              <div>
+                <div class="menu-card-title-row">
+                  <h3 class="menu-card-title">CLÁSSICO</h3>
+                  <span class="menu-card-price">11,95 €</span>
+                </div>
+                <p class="menu-card-desc">
+                  180g de carne de novilho, alface iceberg fresca, cebola salteada aromática, queijo cheddar derretido e
+                  molho de assinatura da casa.
+                </p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="badge-tag">Tradicional</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- HAMBÚRGUER: TI MARIA -->
+          <article class="menu-card" data-category="portugueses">
+            <div class="menu-card-img-wrap">
+              <img src="assets/imagem/menu/hamburgueres/rustico.jpg" alt="Hambúrguer Ti Maria com alheira de Mirandela"
+                loading="lazy">
+              <span class="menu-card-badge">TRÁS-OS-MONTES</span>
+            </div>
+            <div class="menu-card-body">
+              <div>
+                <div class="menu-card-title-row">
+                  <h3 class="menu-card-title">TI MARIA</h3>
+                  <span class="menu-card-price">13,95 €</span>
+                </div>
+                <p class="menu-card-desc">
+                  180g de novilho, alheira de Mirandela crocante, espinafres salteados, ovo estrelado, maçã laminada com
+                  redução de Moscatel e molho da casa.
+                </p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="badge-tag">Alheira & Moscatel</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- HAMBÚRGUER: FRANCESINHA -->
+          <article class="menu-card" data-category="portugueses">
+            <div class="menu-card-img-wrap">
+              <img src="assets/imagem/menu/hamburgueres/rustico.jpg" alt="Hambúrguer Francesinha Porto" loading="lazy">
+              <span class="menu-card-badge">PORTO</span>
+            </div>
+            <div class="menu-card-body">
+              <div>
+                <div class="menu-card-title-row">
+                  <h3 class="menu-card-title">FRANCESINHA</h3>
+                  <span class="menu-card-price">14,95 €</span>
+                </div>
+                <p class="menu-card-desc">
+                  180g de novilho, fiambre, linguiça regional, mortadela, salsicha fresca, queijo Edam a fundir, ovo
+                  estrelado e o inconfundível molho de Francesinha.
+                </p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="badge-tag">Molho Secreto</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- HAMBÚRGUER: REGUILA (KIDS) -->
+          <article class="menu-card" data-category="portugueses">
+            <div class="menu-card-img-wrap">
+              <img src="assets/imagem/menu/hamburgueres/rustico.jpg" alt="Hambúrguer Reguila para os mais pequenos"
+                loading="lazy">
+              <span class="menu-card-badge">INFANTIL</span>
+            </div>
+            <div class="menu-card-body">
+              <div>
+                <div class="menu-card-title-row">
+                  <h3 class="menu-card-title">REGUILA</h3>
+                  <span class="menu-card-price">9,95 €</span>
+                </div>
+                <p class="menu-card-desc">
+                  100g de novilho suculento e suave, alface fresca e queijo cheddar derretido servido no pão
+                  tradicional. Perfeito para crianças.
+                </p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="badge-tag">Menu Infantil</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- HAMBÚRGUER: PICANHA DO RIO -->
+          <article class="menu-card" data-category="mundo">
+            <div class="menu-card-img-wrap">
+              <img src="assets/imagem/menu/hamburgueres/smash-burger.jpg" alt="Picanha do Rio Brasil Burger"
+                loading="lazy">
+              <span class="menu-card-badge">BRASIL</span>
+            </div>
+            <div class="menu-card-body">
+              <div>
+                <div class="menu-card-title-row">
+                  <h3 class="menu-card-title">PICANHA DO RIO</h3>
+                  <span class="menu-card-price">13,95 €</span>
+                </div>
+                <p class="menu-card-desc">
+                  160g de picanha premium grelhada, mozzarella derretida, alface iceberg, abacaxi grelhado caramelizado,
+                  cebola adocicada e Molho Carioca.
+                </p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="badge-tag">Picanha Premium</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- HAMBÚRGUER: TEXAS (PICANTE) -->
+          <article class="menu-card" data-category="mundo">
+            <div class="menu-card-img-wrap">
+              <img src="assets/imagem/menu/hamburgueres/bigfoot.jpg" alt="Hambúrguer Texas U.S.A." loading="lazy">
+              <span class="menu-card-badge">U.S.A. 🌶️</span>
+            </div>
+            <div class="menu-card-body">
+              <div>
+                <div class="menu-card-title-row">
+                  <h3 class="menu-card-title">TEXAS</h3>
+                  <span class="menu-card-price">13,95 €</span>
+                </div>
+                <p class="menu-card-desc">
+                  180g de Novilho, alface iceberg, bacon fumado, aros de cebola crocantes, queijo cheddar e extra
+                  barbecue picante com toque de Tabasco.
+                </p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="badge-tag">Picante</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- HAMBÚRGUER: CASABLANCA -->
+          <article class="menu-card" data-category="mundo">
+            <div class="menu-card-img-wrap">
+              <img src="assets/imagem/menu/hamburgueres/bigfoot.jpg" alt="Hambúrguer Casablanca Marrocos com frango"
+                loading="lazy">
+              <span class="menu-card-badge">MARROCOS</span>
+            </div>
+            <div class="menu-card-body">
+              <div>
+                <div class="menu-card-title-row">
+                  <h3 class="menu-card-title">CASABLANCA</h3>
+                  <span class="menu-card-price">12,95 €</span>
+                </div>
+                <p class="menu-card-desc">
+                  160g de peito de frango temperado, alface iceberg, couve-roxa fresca, cebola crispy, queijo mozzarella
+                  derretido e molho especial da casa.
+                </p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="badge-tag">Frango & Crispy</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- HAMBÚRGUER: MOULIN ROUGE -->
+          <article class="menu-card" data-category="mundo">
+            <div class="menu-card-img-wrap">
+              <img src="assets/imagem/menu/hamburgueres/smash-burger.jpg"
+                alt="Hambúrguer Moulin Rouge França com queijo brie" loading="lazy">
+              <span class="menu-card-badge">FRANÇA</span>
+            </div>
+            <div class="menu-card-body">
+              <div>
+                <div class="menu-card-title-row">
+                  <h3 class="menu-card-title">MOULIN ROUGE</h3>
+                  <span class="menu-card-price">13,95 €</span>
+                </div>
+                <p class="menu-card-desc">
+                  160g de frango com ervas aromáticas servido em meio Bolo do Caco, espargos verdes, molho de mostarda e
+                  mel, queijo Brie francês, amêndoa laminada e doce de abacaxi caramelizado.
+                </p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="badge-tag">Queijo Brie</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- HAMBÚRGUER VEGAN: LAS VEGAN -->
+          <article class="menu-card" data-category="vegans">
+            <div class="menu-card-img-wrap">
+              <img src="assets/imagem/menu/hamburgueres/hamburgueres-vegans.jpg"
+                alt="Hambúrguer Las Vegan em Bolo do Caco" loading="lazy">
+              <span class="menu-card-badge">100% VEGAN</span>
+            </div>
+            <div class="menu-card-body">
+              <div>
+                <div class="menu-card-title-row">
+                  <h3 class="menu-card-title">LAS VEGAN</h3>
+                  <span class="menu-card-price">12,95 €</span>
+                </div>
+                <p class="menu-card-desc">
+                  160g artesanais (Quinoa, aveia, batata-doce, feijão preto e tofu), servido em meio Bolo do Caco, alho
+                  francês, cogumelos salteados com ervas e sementes de chia, alface frisada, cenoura ralada e nozes.
+                </p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="badge-tag">Plant-Based</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- HAMBÚRGUER VEGAN: VEGETA -->
+          <article class="menu-card" data-category="vegans">
+            <div class="menu-card-img-wrap">
+              <img src="assets/imagem/menu/hamburgueres/hamburgueres-vegans.jpg"
+                alt="Hambúrguer Vegeta especiarias indianas" loading="lazy">
+              <span class="menu-card-badge">VEGAN / ÍNDIA</span>
+            </div>
+            <div class="menu-card-body">
+              <div>
+                <div class="menu-card-title-row">
+                  <h3 class="menu-card-title">VEGETA</h3>
+                  <span class="menu-card-price">12,95 €</span>
+                </div>
+                <p class="menu-card-desc">
+                  160g de grão-de-bico, tofu fumado e especiarias indianas aromáticas, servido em Bolo do Caco, alface
+                  iceberg crocante, cebola e cogumelos Portobello salteados em molho de soja.
+                </p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="badge-tag">Aromático</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- SALADA & POKE: FRANGO TERIYAKI -->
+          <article class="menu-card" data-category="poke">
+            <div class="menu-card-img-wrap">
+              <img src="assets/imagem/menu/hamburgueres/saladas-poke-bowls.png" alt="Poke Bowl Frango Teriyaki"
+                loading="lazy">
+              <span class="menu-card-badge">POKE BOWL</span>
+            </div>
+            <div class="menu-card-body">
+              <div>
+                <div class="menu-card-title-row">
+                  <h3 class="menu-card-title">FRANGO TERIYAKI</h3>
+                  <span class="menu-card-price">12,95 €</span>
+                </div>
+                <p class="menu-card-desc">
+                  Base fresca de arroz com frango grelhado, abacaxi doce, cenoura ralada, couve-roxa crocante, pepino em
+                  rodelas, cebola crispy dourada e mix de sementes nutritivas.
+                </p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="badge-tag">Fresco & Saudável</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- SALADA & POKE: SALMÃO -->
+          <article class="menu-card" data-category="poke">
+            <div class="menu-card-img-wrap">
+              <img src="assets/imagem/menu/hamburgueres/saladas-poke-bowls.png" alt="Poke Bowl Salmão fresco"
+                loading="lazy">
+              <span class="menu-card-badge">POKE BOWL</span>
+            </div>
+            <div class="menu-card-body">
+              <div>
+                <div class="menu-card-title-row">
+                  <h3 class="menu-card-title">SALMÃO BOWL</h3>
+                  <span class="menu-card-price">12,95 €</span>
+                </div>
+                <p class="menu-card-desc">
+                  Base fresca de arroz com cubos de salmão fresco, abacaxi doce, cenoura ralada, couve-roxa estaladiça,
+                  pepino fatiado, cebola crispy e mix de sementes.
+                </p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="badge-tag">Salmão Fresco</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- SOBREMESA 1: CHEESECAKE DE ABÓBORA COM NOZES -->
+          <article class="menu-card" data-category="sobremesas">
+            <div class="menu-card-img-wrap">
+              <img src="assets/imagem/menu/sobremesas/cheesecake-de-abobora-com-nozes.jpg"
+                alt="Cheesecake caseiro de abóbora com nozes" loading="lazy">
+              <span class="menu-card-badge">SOBREMESA CASEIRA</span>
+            </div>
+            <div class="menu-card-body">
+              <div>
+                <div class="menu-card-title-row">
+                  <h3 class="menu-card-title">CHEESECAKE DE ABÓBORA</h3>
+                  <span class="menu-card-price">Consulte</span>
+                </div>
+                <p class="menu-card-desc">
+                  Receita caseira exclusiva com base estaladiça, queijo cremoso suave, doce aveludado de abóbora e
+                  crocante de nozes selecionadas.
+                </p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="badge-tag">Artesanal</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- SOBREMESA 2: CHEESECAKE DE FRUTOS VERMELHOS -->
+          <article class="menu-card" data-category="sobremesas">
+            <div class="menu-card-img-wrap">
+              <img src="assets/imagem/menu/sobremesas/cheesecake-de-frutos-vermelhos.jpg"
+                alt="Cheesecake artesanal de frutos vermelhos" loading="lazy">
+              <span class="menu-card-badge">SOBREMESA CASEIRA</span>
+            </div>
+            <div class="menu-card-body">
+              <div>
+                <div class="menu-card-title-row">
+                  <h3 class="menu-card-title">FRUTOS VERMELHOS</h3>
+                  <span class="menu-card-price">Consulte</span>
+                </div>
+                <p class="menu-card-desc">
+                  Clássico irresistível preparado na casa, com creme aveludado de queijo fresco e coulis artesanal de
+                  frutos do bosque vermelhos.
+                </p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="badge-tag">Doçura no Ponto</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- SOBREMESA 3: TARTE DE FERRERO ROCHER -->
+          <article class="menu-card" data-category="sobremesas">
+            <div class="menu-card-img-wrap">
+              <img src="assets/imagem/menu/sobremesas/tarte-de-ferrero-rocher.png" alt="Tarte de Ferrero Rocher"
+                loading="lazy">
+              <span class="menu-card-badge">SOBREMESA DESTAQUE</span>
+            </div>
+            <div class="menu-card-body">
+              <div>
+                <div class="menu-card-title-row">
+                  <h3 class="menu-card-title">TARTE FERRERO ROCHER</h3>
+                  <span class="menu-card-price">Consulte</span>
+                </div>
+                <p class="menu-card-desc">
+                  A sobremesa mais elogiada pelos clientes: base de chocolate rica, creme sedoso com sabor avelã e
+                  cobertura crocante de pedaços de Ferrero Rocher.
+                </p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="badge-tag">Puro Pecado</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Tabela Completa de Extras -->
+        <div class="extras-box">
+          <h3 class="extras-title">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+            <span>EXTRAS & PERSONALIZAÇÃO DO SEU HAMBÚRGUER</span>
+          </h3>
+          <div class="extras-grid">
+            <div class="extra-item">
+              <span>Troca por Bolo do Caco</span>
+              <span class="extra-price">+ 0,95 €</span>
+            </div>
+            <div class="extra-item">
+              <span>Troca por Pão de Brioche</span>
+              <span class="extra-price">+ 0,75 €</span>
+            </div>
+            <div class="extra-item">
+              <span>Bacon Crocante Extra</span>
+              <span class="extra-price">+ 0,95 €</span>
+            </div>
+            <div class="extra-item">
+              <span>Queijo Cheddar Extra</span>
+              <span class="extra-price">+ 0,95 €</span>
+            </div>
+            <div class="extra-item">
+              <span>Ovo Estrelado Extra</span>
+              <span class="extra-price">+ 0,95 €</span>
+            </div>
+            <div class="extra-item">
+              <span>Cogumelos Portobello Extra</span>
+              <span class="extra-price">+ 1,35 €</span>
+            </div>
+            <div class="extra-item">
+              <span>Carne 100g Extra</span>
+              <span class="extra-price">+ 2,95 €</span>
+            </div>
+            <div class="extra-item">
+              <span>Carne 180g Extra</span>
+              <span class="extra-price">+ 3,95 €</span>
+            </div>
+            <div class="extra-item">
+              <span>Dose Batata Rústica Extra</span>
+              <span class="extra-price">+ 1,95 €</span>
+            </div>
+            <div class="extra-item">
+              <span>Dose Batata Doce Extra</span>
+              <span class="extra-price">+ 2,95 €</span>
+            </div>
+            <div class="extra-item">
+              <span>Salada Fresca Extra</span>
+              <span class="extra-price">+ 2,95 €</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       RODAPÉ (COM MARCA D'ÁGUA DO LOGÓTIPO TWO BURGER)
+       ========================================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-grid">
+        <!-- 1. Coluna do Horário, Take Away e Redes Sociais -->
+        <div class="footer-col">
+          <h4>HORÁRIO & LOCAL</h4>
+          <p class="footer-schedule-text">
+            Terça a Domingo:<br>
+            <strong>12h00 – 15h00 | 19h00 – 23h00</strong><br>
+            Segunda-feira: Fechado
+          </p>
+          <p class="footer-address-text">
+            Rua Miguel Pais, nº 8<br>
+            2870-235 Montijo, Portugal
+          </p>
+          <a href="tel:+351910393294" class="footer-takeaway-link" aria-label="Ligar para Take Away: 910 393 294">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            <span>Take Away: 910 393 294</span>
+          </a>
+          <div class="footer-social-row">
+            <a href="https://www.instagram.com/2burger_montijo/" target="_blank" rel="noopener noreferrer"
+              class="footer-social-btn instagram" aria-label="Seguir Two Burger no Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/2burgermontijo" target="_blank" rel="noopener noreferrer"
+              class="footer-social-btn facebook" aria-label="Seguir Two Burger no Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Coluna de Navegação -->
+        <div class="footer-col">
+          <h4>NAVEGAÇÃO</h4>
+          <ul>
+            <li><a href="index.html">Two Burger</a></li>
+            <li><a href="menu.html">Menu</a></li>
+          </ul>
+        </div>
+
+        <!-- 3. Coluna Legal -->
+        <div class="footer-col">
+          <h4>LEGAL</h4>
+          <ul>
+            <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+            <li><a href="politica-cookies.html">Política de Cookies</a></li>
+            <li><a href="termos-condicoes.html">Termos e Condições</a></li>
+            <li><a href="https://www.livroreclamacoes.pt/" target="_blank" rel="noopener noreferrer">Livro de
+                Reclamações</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Acima da linha: Nota de IVA e Alergénios -->
+      <div class="footer-vat-notice">
+        <p>
+          Todos os preços incluem IVA à taxa legal em vigor e estão expressos em euros (€). Os nossos produtos podem
+          conter alergénios — contacte-nos em caso de alergia ou intolerância alimentar.
+        </p>
+      </div>
+
+      <!-- Rodapé Inferior: Direitos Reservados (Esquerda) e Créditos (Direita) -->
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; 2026 Two Burger Montijo. Todos os direitos reservados.
+        </p>
+        <p class="footer-credits">
+          Desenvolvido por <a href="https://davidgomes-portfolio.vercel.app/" target="_blank"
+            rel="noopener noreferrer">David Gomes</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Principal -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
