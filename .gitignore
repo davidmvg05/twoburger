@@ -1,9 +1,19 @@
 # Agentes e configurações locais de IDE
+.agents
 .agents/
 .vscode/
 .idea/
+
+# SEO e AI crawlers
+sitemap.xml
+sitemap*
+robots.txt
+robots*
+llms.txt
+llms*
 
 # Ficheiros de sistema
 .DS_Store
 Thumbs.db
 Desktop.ini
+
