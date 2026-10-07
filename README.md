@@ -3,7 +3,8 @@
 > **Hamburgueria Artesanal, Experiência Gastronómica & Take Away**  
 > Website oficial do restaurante **Two Burger** no centro histórico do Montijo, desenvolvido com foco em performance, acessibilidade WCAG, SEO Local / AEO e experiência de utilizador imersiva.
 
-🌐 **Website:** [twoburger.com](https://twoburger.com/)  
+🌐 **Live Demo (GitHub Pages):** [davidmvg05.github.io/twoburger](https://davidmvg05.github.io/twoburger/)  
+🔗 **Domínio Oficial:** [twoburger.com](https://twoburger.com/)  
 📍 **Localização:** Rua Miguel Pais, nº 8, 2870-235 Montijo  
 📞 **Take Away & Reservas:** +351 910 393 294  
 📸 **Instagram:** [@2burger_montijo](https://www.instagram.com/2burger_montijo/)  
