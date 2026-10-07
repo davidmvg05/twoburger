@@ -82,27 +82,6 @@ O repositório inclui um workflow do **GitHub Actions** ([`.github/workflows/dep
 2. **Build de Produção (`./dist`):** Empacota todos os ficheiros estáticos de produção (`*.html`, `.htaccess`, `css/`, `js/`, `assets/`) num diretório limpo.
 3. **Publicação de Artefacto & Deploy:** Carrega o artefacto de produção (`twoburger-production-build`) e executa o deploy automático para o GitHub Pages quando ativo no repositório.
 
----
-
-## 💻 Como Executar Localmente
-
-Por se tratar de uma arquitetura estática sem dependências externas de compilação, basta servir a pasta raiz com qualquer servidor HTTP local:
-
-```bash
-# Clonar o repositório
-git clone https://github.com/davidmvg05/twoburger.git
-cd twoburger
-
-# Iniciar servidor local (exemplo com Python 3 ou Node.js npx serve)
-python -m http.server 8080
-# ou
-npx serve .
-```
-
-De seguida, aceda a `http://localhost:8080` no navegador.
-
----
-
 ## ⚖️ Direitos de Autor e Propriedade Intelectual
 
 Todos os direitos reservados &copy; **Two Burger Montijo**.  
