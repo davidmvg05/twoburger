@@ -1,0 +1,67 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    name: Build & Deploy Static Website
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate project files
+        run: |
+          echo "Validating HTML, CSS, and JS files..."
+          for file in index.html menu.html 404.html politica-cookies.html politica-privacidade.html termos-condicoes.html css/style.css js/main.js; do
+            if [ ! -f "$file" ]; then
+              echo "Error: Required file $file is missing!"
+              exit 1
+            fi
+          done
+          echo "All core files validated successfully."
+
+      - name: Build production bundle
+        run: |
+          mkdir -p dist
+          cp *.html dist/
+          if [ -f .htaccess ]; then cp .htaccess dist/; fi
+          cp -r css js assets dist/
+          echo "Production build created in ./dist"
+          ls -la dist/
+
+      - name: Upload production build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: twoburger-production-build
+          path: ./dist
+          if-no-files-found: error
+
+      - name: Setup GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+        continue-on-error: true
+
+      - name: Upload Pages artifact
+        if: steps.pages.outcome == 'success'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        if: steps.pages.outcome == 'success'
+        uses: actions/deploy-pages@v4
